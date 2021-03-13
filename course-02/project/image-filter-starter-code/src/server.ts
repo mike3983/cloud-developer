@@ -1,6 +1,8 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import {filterImageFromURL, deleteLocalFiles} from './util/util';
+import express from "express";
+import { Request, Response } from "express";
+import bodyParser from "body-parser";
+import validUrl from "valid-url";
+import { filterImageFromURL, deleteLocalFiles } from "./util/util";
 
 (async () => {
 
